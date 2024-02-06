@@ -1,24 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mon Site Web</title>
-</head>
-<body>
-    <header>
-        <h1>Mon Site Web</h1>
-    </header>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/style_restart.css">
+        <meta charset="UTF-8">
+        <title>Site API cocktail</title>
+        <link rel="shortcut icon" type="image/png" href="image/favicon.png"/>
+    </head>
+    
+    <body>
+        </div>
+        <header>
+            <img class="header_image" src="/image/il_570xN.4771639088_kt8o.png">
+        </header>
 
-    <section>
-        <h2>Section principale</h2>
-        <p>Bienvenue sur mon site web avec un thème de couleur vert et noir.</p>
-        <p>C'est une page simple pour commencer.</p>
-    </section>
+        <!-- Début contenu accueil -->
+        <nav align="center" class="menu">
+            <ul>
+                <li class="button">
+                    <a class="research_bar" href="html/page_2.html" target="_blank">
+                        ENTRER
+                    </a>
+                </li>
+                <li class="button">
+                    <a class="research_bar" href="vidéo/easter_egg.mp4" target="_blank">                       
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <footer>
-        <p>Contactez-moi à contact@monsite.com</p>
-    </footer>
-</body>
+        <div>
+            <div align="center">
+                <video id="video" src="vidéo/cocktail_1.mp4" width="100%" height="100%"autoplay muted></video>
+                <script>
+                  const video = document.getElementById("video");
+                  const videos = ["vidéo1_a mettre dans un dossier vidéo",  "vidéo2_a mettre dans le dossier vidéo",];
+                
+                  let currentVideoIndex = 0;
+                  function changeVideo() {
+                    if(currentVideoIndex >= videos.length) currentVideoIndex = 0;
+                    video.src = videos[currentVideoIndex++];
+                    video.play();
+                  }
+              
+                  video.addEventListener("ended", changeVideo);
+                </script>                 
+            </div> 
+        </div>
+        
+        <div class="parent">   
+            <div class="maps-container">
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.718187733895!2d-1.630602284517373!3d48.096379962008555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edf3d06948ea9%3A0xe633565b2fd9a9fd!2s21%20Rue%20du%20Bignon%2C%2035000%20Chantepie!5e0!3m2!1sfr!2sfr!4v1673425441157!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+            <div class="zone-texte">
+                <div class="boite-texte">
+                    <ul class="horaires">
+                        <h2> HORAIRE<a class="RED-EG" href="vidéo/SCH.mp4" target="_blank">S</a> </h2>
+                        <li> <a class="WHITE-EG" href="https://fr.wikipedia.org/wiki/Lama_(animal)" target="_blank">L</a>undi &rAarr; 9h15/12h15 - 13h45/16h45 </li>
+                        <li> Mardi &rAarr; 9h15/12h15 - 13h45/16h45  </li>
+                        <li> Mercredi &rAarr; 9h15/12h15 - 13h45/16h45  </li>
+                        <li> Jeudi &rAarr; 9h15/12h15 - 13h45/16h45  </li>
+                        <li> Vendredi &rAarr; 9h15/12h15 - 13h45/16h45  </li>
+                        <li> Samedi &rAarr; <span style="color: rgb(180, 5, 5);">FERME</span> </li>
+                        <li> Dimanche &rAarr; <span style="color: rgb(180, 5, 5);">FERME</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Debut pied de page -->
+        <footer>
+            <div id="footer">
+                <p>
+                    Copyright <a class="RED-EG" href="vidéo/trololol.mp4" target="_blank">&copy;</a> Yann Krasinski & Geremy Dehlot - 2024
+                </p><br>             
+            </div>   
+        </footer>
+        <!-- Fin pied de page -->
+    </body>
 </html>

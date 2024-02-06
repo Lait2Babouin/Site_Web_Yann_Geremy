@@ -1,18 +1,162 @@
-body {
-    background-color: #000;
-    color: #1DB954;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+@media screen and (min-width: 600px) {
+    /* Règles CSS */
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .maps-container {
+        order: 1;
+    }
+
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
 }
 
-header, section, footer {
-    background-color: #000;
-    color: #1DB954;
-    padding: 20px;
+
+/* ----- Début mise en page accueil ----- */
+
+/* DEBUT HEADER */
+.header_image {
+    border-radius: 10%;
+    padding-top: 5px;
+    width: 100%;
+    object-fit: cover;
+    height: 740px;
+    border-style: double;
+    border-color: rgb(180, 5, 5);
+    border-left: 50px;
+    border-right: 50px;
+}
+
+/* FIN HEADER */
+
+/* DEBUT BODY */
+.research_bar {
+    color: rgb(180, 5, 5);
+    background-color: #222;
+    text-decoration: dashed;
+    padding: 10px;
+    margin: 10px 50px;
+    padding: 2px 4px;
+    border-radius: 10%;
+}
+
+#video {
+    max-width: 720px;
+    max-height: 420px;
+    border-width: 10px;
+    border-style:double;
+    border-color: rgb(180, 5, 5);
+}
+
+.menu .button {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu .button :hover {
+    color: #222;
+    background-color: rgb(180, 5, 5);
+    border-style: groove;
+    border-color: pink;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 0%;
+    transition: 0.2s all;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: grab;
+}
+
+.parent {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.maps-container {
+    flex: 1;
+    display: flex;
+    align-items: center;   
+}
+
+.maps {
+    border-radius: 10%;
+    border-width: 50px;
+    box-sizing: 10px;
+    margin: auto;
+    max-width: 720px;
+    max-height: 420px;
+}
+
+.zone-texte {
+    flex: 1;
+    cursor: default;
+}
+
+.boite-texte {
+    font-variant: small-caps;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
     text-align: center;
 }
 
-section {
-    padding: 40px;
+.horaires {
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    font-size: xx-large;
+    font-style: oblique; 
 }
+
+.horaires h2 {
+    color: rgb(180, 5, 5);
+    margin-bottom: 1px;
+    margin-top: 0px;
+}
+
+.WHITE-EG:link:link {
+    text-decoration: none;
+    color: white;
+}
+.WHITE-EG:hover{
+    text-decoration: none;
+    color: white;
+    cursor: default;    
+}
+.WHITE-EG:visited {
+    text-decoration: none;
+    color: white;
+}
+/* FIN BODY */
+
+/* DEBUT FOOTER */
+#footer {
+    text-align: center;
+    padding-top: 5%;
+    cursor: default;
+}
+
+.RED-EG:link {
+    color: rgb(180, 5, 5);
+    text-decoration: none;
+}
+.RED-EG:hover {
+    cursor: default;
+    color: rgb(180, 5, 5);
+    text-decoration: none;
+}
+.RED-EG:visited {
+    color: rgb(180, 5, 5);
+    text-decoration: none;
+}
+/* FIN FOOTER /*

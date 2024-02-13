@@ -8,6 +8,12 @@ body, html {
     align-items: center;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     display: flex;
     background-color: black;

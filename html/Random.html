@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cocktail Random</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.10.10/css/onsenui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.10.10/css/dark-onsen-css-components.min.css">
+  <link rel="stylesheet" href="../css/Random.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/onsen/2.10.10/js/onsenui.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="../image/favicon.png"/>
+</head>
+<body>
+  <ons-page>
+  <ons-toolbar>
+    <div class="center"> Cocktails Random </div>
+  </ons-toolbar>
+
+  <ons-tabbar swipeable position="auto">
+    <ons-tab page="home.html" label="Cocktails" icon="fa-cocktail" active>
+    </ons-tab>
+    <ons-tab page="about.html" label="About" icon="fa-cog" >
+    </ons-tab>
+
+  </ons-tabbar>
+</ons-page>
+
+<template id="home.html">
+  <ons-page id="home">
+  	<ons-pull-hook id="pull-hook">
+    	Pull to refresh
+  	</ons-pull-hook>
+    
+    <section id="drink-section"></section>
+  </ons-page>
+</template>
+
+<template id="about.html">
+  <ons-page id="about">
+    <p> Pour les cocktails aléatoire nous nous sommes inspirés de l'API <span>CocktailDB</span><br>
+    <a href="https://www.thecocktaildb.com/api.php" target="_blank"><img src="../image/logo_cocktailDB.png"></a> 
+    </p>
+  </ons-page>
+</template>
+
+	<script src="../js/par_son_nom.js"></script>
+</body>
+</html>
